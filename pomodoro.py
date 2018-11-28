@@ -60,6 +60,9 @@ class PomodoroTimer(QtWidgets.QSystemTrayIcon):
 
 
 def find_already_running():
+    if os.name == 'nt':
+        # Ignore windows
+        return
     run_count = 0
     pids = [pid for pid in os.listdir('/proc') if pid.isdigit()]
     for pid in pids:
