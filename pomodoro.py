@@ -97,5 +97,5 @@ def set_time(offset=0):
 
 if __name__ == '__main__':
     signal.signal(signal.SIGINT, signal.SIG_DFL)
-    find_already_running()
+    # find_already_running()
     tray_icon()
