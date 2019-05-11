@@ -11,8 +11,10 @@ SUB = 'SUB'
 REQUIRED_QTR_COUNT = 3
 
 FIELD = {
-    ATT: {'max_players': 6, 'assigned_players': []},
+    ATT: {'max_players': 3, 'assigned_players': []},
+    MID: {'max_players': 3, 'assigned_players': []},
     DEF: {'max_players': 4, 'assigned_players': []},
+    GK: {'max_players': 1, 'assigned_players': []},
     SUB: {'max_players': -1, 'assigned_players': []}
     }
 PLAYERS = {
@@ -20,13 +22,13 @@ PLAYERS = {
     , 'AP': {'name': 'AP', 'position': DEF, 'total_qtrs': 25, 'subbed': False}
     , 'BL': {'name': 'BL', 'position': DEF, 'total_qtrs': 10, 'subbed': False}
     , 'E': {'name': 'E', 'position': DEF, 'total_qtrs': 12, 'subbed': False}
-    , 'H': {'name': 'H', 'position': ATT, 'total_qtrs': 19, 'subbed': False}
-    , 'JC': {'name': 'JC', 'position': DEF, 'total_qtrs': 20, 'subbed': False}
+    , 'H': {'name': 'H', 'position': MID, 'total_qtrs': 19, 'subbed': False}
+    , 'JC': {'name': 'JC', 'position': MID, 'total_qtrs': 20, 'subbed': False}
     , 'JJ': {'name': 'JJ', 'position': ATT, 'total_qtrs': 21, 'subbed': False}
     , 'LC': {'name': 'LC', 'position': ATT, 'total_qtrs': 9, 'subbed': False}
-    , 'LP': {'name': 'LP', 'position': DEF, 'total_qtrs': 18, 'subbed': False}
+    , 'LP': {'name': 'LP', 'position': MID, 'total_qtrs': 18, 'subbed': False}
     , 'M': {'name': 'M', 'position': ATT, 'total_qtrs': 23, 'subbed': False}
-    , 'NA': {'name': 'NA', 'position': DEF, 'total_qtrs': 25, 'subbed': False}
+    , 'NA': {'name': 'NA', 'position': MID, 'total_qtrs': 25, 'subbed': False}
     , 'NB': {'name': 'NB', 'position': DEF, 'total_qtrs': 25, 'subbed': False}
     , 'ND': {'name': 'ND', 'position': ATT, 'total_qtrs': 20, 'subbed': False}
 }
